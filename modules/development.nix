@@ -22,7 +22,8 @@
     # --- Development ---
     android-tools 
     jdk17
-    nodejs_20 
+    nodejs_20
+    gnome-boxes
   ];
 
   programs.direnv.enable = true; 
