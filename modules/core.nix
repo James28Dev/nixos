@@ -10,5 +10,5 @@
   i18n.supportedLocales = [ "en_US.UTF-8/UTF-8" "th_TH.UTF-8/UTF-8" ];
 
   networking.networkmanager.enable = true;
-  time.timeZone = "Bangkok/Thailand";
+  time.timeZone = "Asia/Bangkok";
 }
