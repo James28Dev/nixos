@@ -14,6 +14,7 @@
     packages = with pkgs; [ 
       tree 
     ];
+    shell = pkgs.fish;
   };
 
   # --- Secondary User Account: Guest ---
