@@ -13,6 +13,7 @@
     ./modules/pkgs/dev-node.nix
     ./modules/pkgs/gnome-stocks-watchlist-config.nix
     ./modules/pkgs/setup-nixos-config-symlink.nix
+    ./modules/pkgs/shell.nix
   ];
 
   # --- Nix Package Manager Settings ---
