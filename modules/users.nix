@@ -2,12 +2,12 @@
 
 {
   users.users.james = {
-    extraGroups = [ 
-      "adbusers" 
-      "kvm" 
-      "libvirtd" 
-      "networkmanager" 
-      "wheel" 
+    extraGroups = [
+      "adbusers"
+      "kvm"
+      "libvirtd"
+      "networkmanager"
+      "wheel"
     ];
     isNormalUser = true;
     packages = with pkgs; [ 
@@ -17,6 +17,9 @@
 
   users.users.guest = { 
     description = "Guest User";
+    extraGroups = [
+      "networkmanager"
+    ];
     initialPassword = ""; 
     isNormalUser = true;
   };

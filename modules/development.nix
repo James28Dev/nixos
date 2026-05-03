@@ -20,14 +20,7 @@
     hicolor-icon-theme
     mesa-demos
 
-  programs.direnv.enable = true; 
-  programs.direnv.nix-direnv.enable = true;
-  programs.nix-ld.enable = true; 
-  programs.nix-ld.libraries = with pkgs; [
-    glibc 
-    stdenv.cc.cc 
-    xorg.libX11
-    zlib 
+    # --- Gnome Extensions ---
     gnomeExtensions.stocks-extension
   ];
 }
