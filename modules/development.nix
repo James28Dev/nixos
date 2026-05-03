@@ -3,28 +3,22 @@
 {
   environment.systemPackages = with pkgs; [
     # --- Core Tools ---
-    direnv 
-    git 
-    nix-direnv 
+    git
     tree
-    unzip 
-    wget 
-    # --- Editors & Browsers ---
-    android-studio
-    brave 
-    nano 
-    neovim 
-    vscode 
+    unzip
+    wget
+
+    # --- Browsers ---
+    brave
+
+    # --- Editors ---
+    nano
+    vscode
+
     # --- System & UI ---
-    adwaita-icon-theme 
-    hicolor-icon-theme 
+    adwaita-icon-theme
+    hicolor-icon-theme
     mesa-demos
-    # --- Development ---
-    android-tools 
-    jdk17
-    nodejs_20
-    gnome-boxes
-  ];
 
   programs.direnv.enable = true; 
   programs.direnv.nix-direnv.enable = true;
@@ -34,14 +28,6 @@
     stdenv.cc.cc 
     xorg.libX11
     zlib 
+    gnomeExtensions.stocks-extension
   ];
-
-  environment.sessionVariables = {
-    ANDROID_HOME = "/home/james/Android/Sdk";
-    ANDROID_SDK_ROOT = "/home/james/Android/Sdk";
-    CHROME_EXECUTABLE = "/run/current-system/sw/bin/brave";
-    PATH = [ "$HOME/.npm-global/bin" ];
-  };
-
-  nixpkgs.config.android_sdk.accept_license = true;
 }
