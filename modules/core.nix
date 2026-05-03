@@ -22,6 +22,7 @@
   fonts.packages = with pkgs; [
     liberation_ttf
     noto-fonts
+    fira-mono
   ];
 
   # --- Networking ---
