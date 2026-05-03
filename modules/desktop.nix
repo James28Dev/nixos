@@ -18,7 +18,7 @@
     gnome-weather 
     seahorse
     simple-scan 
-  ]);
+  ];
 
   documentation.nixos.enable = false;
   services.xserver.excludePackages = with pkgs; [
