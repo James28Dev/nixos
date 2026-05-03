@@ -8,6 +8,7 @@
   services.xserver.updateDbusEnvironment = true;
 
   environment.gnome.excludePackages = (with pkgs; [
+  environment.gnome.excludePackages = with pkgs; [
     geary 
     gnome-characters 
     gnome-contacts 
@@ -25,5 +26,7 @@
   fonts.packages = with pkgs; [
     liberation_ttf
     noto-fonts 
+  services.xserver.excludePackages = with pkgs; [
+    xterm
   ];
 }
