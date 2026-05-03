@@ -22,7 +22,7 @@
   fonts.packages = with pkgs; [
     liberation_ttf
     noto-fonts
-    (nerdfonts.override { fonts = [ "FiraMono" ]; })
+    nerd-fonts.fira-mono
   ];
 
   # --- Networking ---
