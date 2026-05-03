@@ -7,7 +7,7 @@
   services.xserver.enable = true;
   services.xserver.updateDbusEnvironment = true;
 
-  environment.gnome.excludePackages = (with pkgs; [
+  # --- GNOME Bloatware Removal ---
   environment.gnome.excludePackages = with pkgs; [
     geary 
     gnome-characters 
@@ -21,11 +21,6 @@
   ]);
 
   documentation.nixos.enable = false;
-  services.xserver.excludePackages = [ pkgs.xterm ];
-
-  fonts.packages = with pkgs; [
-    liberation_ttf
-    noto-fonts 
   services.xserver.excludePackages = with pkgs; [
     xterm
   ];
