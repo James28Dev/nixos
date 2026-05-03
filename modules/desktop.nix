@@ -1,6 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
+  # --- GNOME Desktop Services ---
   programs.dconf.enable = true;
   services.desktopManager.gnome.enable = true;
   services.displayManager.gdm.enable = true;
@@ -20,6 +21,7 @@
     simple-scan 
   ];
 
+  # --- System Optimization ---
   documentation.nixos.enable = false;
   services.xserver.excludePackages = with pkgs; [
     xterm

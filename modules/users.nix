@@ -1,6 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
+  # --- Primary User Account: James ---
   users.users.james = {
     extraGroups = [
       "adbusers"
@@ -15,6 +16,7 @@
     ];
   };
 
+  # --- Secondary User Account: Guest ---
   users.users.guest = { 
     description = "Guest User";
     extraGroups = [
