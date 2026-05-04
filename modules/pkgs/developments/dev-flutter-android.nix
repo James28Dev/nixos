@@ -30,7 +30,7 @@
   environment.sessionVariables = {
     ANDROID_HOME = "/home/james/Android/Sdk";
     ANDROID_SDK_ROOT = "/home/james/Android/Sdk";
-    CHROME_EXECUTABLE = "/run/current-system/sw/bin/brave"; # สำหรับ Flutter Web
+    CHROME_EXECUTABLE = "/run/current-system/sw/bin/brave";
   };
 
   # --- Android Licenses ---

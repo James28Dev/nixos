@@ -9,9 +9,8 @@
     ./modules/development.nix
     ./modules/users.nix
     # --- Custom Package Configurations ---
-    ./modules/pkgs/dev-flutter-android.nix
-    ./modules/pkgs/dev-node.nix
-    ./modules/pkgs/gnome-stocks-watchlist-config.nix
+    ./modules/pkgs/developments/dev-flutter-android.nix
+    ./modules/pkgs/developments/dev-node.nix
     .modules/pkgs/gnome-extensions/stocks-extension/stocks-config.nix
     ./modules/pkgs/setup-nixos-config-symlink.nix
     ./modules/pkgs/shell.nix
