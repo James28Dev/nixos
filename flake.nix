@@ -11,10 +11,7 @@
     nixosConfigurations = {
       # --- สำหรับเครื่อง PC (GTX 1050) ---
       pc = nixpkgs.lib.nixosSystem {
-        modules = [
-          ./configuration.nix
-          ./modules/hardware/nvidia-gtx1050.nix # โหลดเฉพาะตัว PC
-        ];
+        modules = [ ./configuration.nix ];
         specialArgs = { inherit inputs; };
         system = "x86_64-linux";
       };
@@ -23,7 +20,8 @@
       rog = nixpkgs.lib.nixosSystem {
         modules = [
           ./configuration.nix
-          ./modules/hardware/nvidia-gtx1650ti-g14-hybrid.nix # โหลดเฉพาะตัว G14
+          # --- Safety First NVIDIA driver ---
+          # ./modules/drivers/nvidia-gtx1650ti-g14-hybrid.nix
         ];
         specialArgs = { inherit inputs; };
         system = "x86_64-linux";
