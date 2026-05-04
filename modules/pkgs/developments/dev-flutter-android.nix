@@ -27,11 +27,9 @@
   programs.direnv.nix-direnv.enable = true;
 
   # --- Environment Variables ---
-  environment.sessionVariables = {
-    ANDROID_HOME = "/home/james/Android/Sdk";
-    ANDROID_SDK_ROOT = "/home/james/Android/Sdk";
-    CHROME_EXECUTABLE = "/run/current-system/sw/bin/brave";
-  };
+  environment.sessionVariables.ANDROID_HOME = "/home/james/Android/Sdk";
+  environment.sessionVariables.ANDROID_SDK_ROOT = "/home/james/Android/Sdk";
+  environment.sessionVariables.CHROME_EXECUTABLE = "/run/current-system/sw/bin/brave";
 
   # --- Android Licenses ---
   nixpkgs.config.android_sdk.accept_license = true;

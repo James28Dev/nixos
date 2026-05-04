@@ -2,7 +2,8 @@
 
 {
   # --- Bootloader & Kernel ---
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  boot.kernelPackages = pkgs.linuxPackages;
+  # boot.kernelPackages = pkgs.linuxPackages_latest;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.loader.systemd-boot.enable = true;
@@ -15,21 +16,15 @@
 
   # --- Localization & Internationalization ---
   i18n.defaultLocale = "en_US.UTF-8";
-  i18n.inputMethod = {
-    enable = true;
-    type = "ibus";
-    ibus.engines = with pkgs.ibus-engines; [
-      libthai
-    ];
-  };
+  i18n.inputMethod.enable = true;
+  i18n.inputMethod.type = "ibus";
+  i18n.inputMethod.ibus.engines = with pkgs.ibus-engines; [ libthai ];
   i18n.supportedLocales = [ "en_US.UTF-8/UTF-8" "th_TH.UTF-8/UTF-8" ];
   time.timeZone = "Asia/Bangkok";
 
   # --- Keyboard Layout ---
-  services.xserver.xkb = {
-    layout = "us,th";
-    options = "grp:win_space_toggle";
-  };
+  services.xserver.xkb.layout = "us,th";
+  services.xserver.xkb.options = "grp:win_space_toggle";
 
   # --- System-wide Fonts ---
   fonts.packages = with pkgs; [

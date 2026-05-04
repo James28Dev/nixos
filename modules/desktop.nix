@@ -23,7 +23,5 @@
 
   # --- System Optimization ---
   documentation.nixos.enable = false;
-  services.xserver.excludePackages = with pkgs; [
-    xterm
-  ];
+  services.xserver.excludePackages = with pkgs; [ xterm ];
 }

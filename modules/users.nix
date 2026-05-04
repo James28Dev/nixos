@@ -11,18 +11,14 @@
       "wheel"
     ];
     isNormalUser = true;
-    packages = with pkgs; [ 
-      tree 
-    ];
+    packages = with pkgs; [ tree ];
     shell = pkgs.fish;
   };
 
   # --- Secondary User Account: Guest ---
   users.users.guest = { 
     description = "Guest User";
-    extraGroups = [
-      "networkmanager"
-    ];
+    extraGroups = [ "networkmanager" ];
     initialPassword = ""; 
     isNormalUser = true;
   };
