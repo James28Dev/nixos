@@ -10,7 +10,7 @@
   programs.fish.enable = true;
 
   # --- Interactive Shell Initialization ---
-  # Other themes: montys, paradox
+  # Other themes: montys, paradox.
   programs.fish.interactiveShellInit = ''
     oh-my-posh init fish --config /home/james/nixos/modules/oh-my-posh-themes/craver.omp.json | source
   '';

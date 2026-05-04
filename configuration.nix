@@ -13,7 +13,7 @@
     ./modules/pkgs/developments/dev-node.nix
     .modules/pkgs/gnome-extensions/stocks-extension/stocks-config.nix
     ./modules/pkgs/setup-nixos-config-symlink.nix
-    ./modules/pkgs/shell.nix
+    ./modules/pkgs/shell-config.nix
   ];
 
   # --- Nix Package Manager Settings ---
