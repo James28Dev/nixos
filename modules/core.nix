@@ -7,11 +7,12 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
   boot.loader.systemd-boot.enable = true;
+  boot.loader.systemd-boot.configurationLimit = 15;
 
   # --- Nix Maintenance ---
   nix.gc.automatic = true;
-  nix.gc.dates = "weekly";
-  nix.gc.options = "--delete-older-than 14d";
+  nix.gc.dates = "daily";
+  nix.gc.options = "--delete-older-than 7d";
   nix.settings.auto-optimise-store = true;
 
   # --- Localization & Internationalization ---
