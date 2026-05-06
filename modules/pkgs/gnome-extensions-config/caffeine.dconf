@@ -1,0 +1,6 @@
+[org/gnome/shell/extensions/caffeine]
+cli-toggle=false
+enable-mpris=true
+indicator-position-max=3
+restore-state=true
+user-enabled=false
