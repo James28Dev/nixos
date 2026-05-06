@@ -19,8 +19,5 @@
     adwaita-icon-theme
     hicolor-icon-theme
     mesa-demos
-
-    # --- Gnome Extensions ---
-    gnomeExtensions.stocks-extension
   ];
 }
