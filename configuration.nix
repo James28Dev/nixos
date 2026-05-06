@@ -11,8 +11,8 @@
     # --- Custom Package Configurations ---
     ./modules/pkgs/developments/dev-flutter-android.nix
     ./modules/pkgs/developments/dev-node.nix
+    ./modules/pkgs/gnome-extensions-loader.nix
     ./modules/pkgs/shell-config.nix
-    ./modules/pkgs/gnome-extensions/stocks-extension/stocks-config.nix
   ];
 
   # --- Nix Package Manager Settings ---
