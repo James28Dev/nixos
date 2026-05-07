@@ -9,7 +9,9 @@
     nixosConfigurations = {
       # --- PC Setup (GTX 1050) ---
       pc = nixpkgs.lib.nixosSystem {
-        modules = [ ./configuration.nix ];
+        modules = [
+          ./configuration.nix
+          ./modules/drivers/nvidia-gtx1050.nix ];
         specialArgs = { inherit inputs; };
         system = "x86_64-linux";
       };

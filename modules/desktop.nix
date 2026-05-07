@@ -4,7 +4,7 @@
   # --- GNOME Desktop Services ---
   programs.dconf.enable = true;
   services.desktopManager.gnome.enable = true;
-  services.displayManager.gdm.enable = true;
+  services.displayManager.gdm.enable = lib.mkDefault true;
   services.xserver.enable = true;
   services.xserver.updateDbusEnvironment = true;
 
