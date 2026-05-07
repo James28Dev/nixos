@@ -18,13 +18,13 @@
   hardware.nvidia.prime.offload.enableOffloadCmd = true;
 
   # --- Boot & Stability Optimization ---
-  boot.initrd.kernelModules = [ "nvidia" ];
+  # boot.initrd.kernelModules = [ "nvidia" ];
   boot.kernelParams = [ "nvidia-drm.modeset=1" "module_blacklist=nouveau" ];
   services.xserver.videoDrivers = [ "nvidia" ];
 
   # --- Display Manager & X11 Config ---
   services.displayManager.gdm.wayland = false;
-  services.displayManager.defaultSession = "gnome";
+  # services.displayManager.defaultSession = "gnome";
 
   # --- Custom Scripts & Packages ---
   environment.systemPackages = [
