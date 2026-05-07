@@ -7,10 +7,13 @@
   hardware.nvidia.prime.nvidiaBusId = "example PCI:1:0:0";
 
   # --- NVIDIA GTX 1650 Ti (G14 Hybrid) Configuration ---
+  hardware.graphics.enable = true;
+  hardware.graphics.enable32Bit = true; # Required for Steam/32-bit apps
   hardware.nvidia.modesetting.enable = true;
   hardware.nvidia.open = false;
-  hardware.nvidia.package = config.boot.kernelPackages.nvidia_x11;
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.stable;
   hardware.nvidia.powerManagement.enable = true; # Improved power management for 1650 Ti laptops
+  hardware.nvidia.powerManagement.finegrained = true;
   hardware.nvidia.prime.offload.enable = true;
   hardware.nvidia.prime.offload.enableOffloadCmd = true;
 
