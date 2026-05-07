@@ -2,7 +2,7 @@
 
 {
   # --- CRITICAL: PCI Bus IDs ---
-  # Run: nix-shell -p pciutils --run "lspci -nn | grep -E 'VGA|3D'" to find your IDs
+  # Run: nix shell nixpkgs#pciutils -c sh -c "lspci -nn | grep -E 'VGA|3D'" to find your IDs, Example of entering actual values: "PCI:4:0:0"
   hardware.nvidia.prime.amdgpuBusId = "example PCI:4:0:0";
   hardware.nvidia.prime.nvidiaBusId = "example PCI:1:0:0";
 
