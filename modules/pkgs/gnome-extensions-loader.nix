@@ -6,9 +6,12 @@
     gnome-extension-manager
     gnome-tweaks
     # --- Gnome Extensions ---
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.burn-my-windows
     gnomeExtensions.caffeine
     gnomeExtensions.forge
     gnomeExtensions.logo-menu
+    gnomeExtensions.paperwm
     gnomeExtensions.stocks-extension
 
     (pkgs.writeShellScriptBin "gnome-extensions-loader" ''
