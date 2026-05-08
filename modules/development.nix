@@ -13,11 +13,11 @@
 
     # --- Editors ---
     nano
+    ptyxis
     vscode
 
     # --- System & UI ---
     adwaita-icon-theme
-    hicolor-icon-theme
     mesa-demos
   ];
 }
