@@ -9,7 +9,6 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.burn-my-windows
     gnomeExtensions.caffeine
-    gnomeExtensions.forge
     gnomeExtensions.logo-menu
     gnomeExtensions.paperwm
     gnomeExtensions.stocks-extension
@@ -17,13 +16,6 @@
     (pkgs.writeShellScriptBin "gnome-extensions-loader" ''
       # wait for desktop session to be ready
       sleep 5
-
-      # --- forge extension bug fix ---
-      # create required directories and stub files to prevent permission errors
-      mkdir -p $HOME/.config/forge
-      if [ ! -f $HOME/.config/forge/stylesheet.css ]; then
-        touch $HOME/.config/forge/stylesheet.css
-      fi
 
       # --- burn-my-windows extension profile setup ---
       # create directory and copy profile from nix store to home
