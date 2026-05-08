@@ -1,0 +1,5 @@
+[org/gnome/shell/extensions/burn-my-windows]
+active-profile='/home/james/.config/burn-my-windows/profiles/default.conf'
+last-extension-version=48
+last-prefs-version=48
+prefs-open-count=5

@@ -22,6 +22,11 @@
         touch $HOME/.config/forge/stylesheet.css
       fi
 
+      # --- burn-my-windows extension profile setup ---
+      # create directory and copy profile from nix store to home
+      mkdir -p $HOME/.config/burn-my-windows/profiles
+      cp $HOME/nixos/modules/pkgs/gnome-extensions-config/burn-my-windows.conf $HOME/.config/burn-my-windows/profiles/default.conf
+
       # --- load dconf settings ---
       # iterate through dconf files and apply configurations
       CONFIG_DIR="/etc/gnome-config"
