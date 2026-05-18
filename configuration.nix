@@ -13,6 +13,7 @@
     ./modules/pkgs/developments/dev-node.nix
     ./modules/pkgs/gnome-extensions-loader.nix
     ./modules/pkgs/shell-config.nix
+    ./modules/pkgs/steam.nix
   ];
 
   # --- Nix Package Manager Settings ---
